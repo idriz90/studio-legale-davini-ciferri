@@ -1,6 +1,6 @@
 # Studio Legale Associato Davini Ciferri
 
-Bozza statica del sito, aggiornata al 20 ottobre 2026.
+Bozza statica del sito, aggiornata al 22 ottobre 2026.
 
 Questa copia contiene HTML, CSS, JavaScript, fotografie e font della versione studio-originale. Non include le precedenti proposte grafiche o documenti riservati.
 
@@ -15,3 +15,4 @@ Bozza noindex, non pubblicata. GitHub Pages non attivato. Il sito Wix e il domin
 Prima della pubblicazione: revisione di contenuti e informative, verifica dei recapiti e dei diritti sulle risorse, controllo visuale mobile e configurazione SEO di produzione. Il recapito di Livorno resta da confermare.
 
 I font mantengono le rispettive licenze OFL nella cartella assets.
+
