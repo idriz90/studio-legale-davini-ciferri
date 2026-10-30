@@ -1,6 +1,6 @@
 # Studio Legale Associato Davini Ciferri
 
-Bozza statica del sito, aggiornata al 22 ottobre 2026.
+Bozza statica del sito, aggiornata al 30 ottobre 2026.
 
 Questa copia contiene HTML, CSS, JavaScript, fotografie e font della versione studio-originale. Non include le precedenti proposte grafiche o documenti riservati.
 
