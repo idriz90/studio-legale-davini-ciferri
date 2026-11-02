@@ -16,3 +16,7 @@ Prima della pubblicazione: revisione di contenuti e informative, verifica dei re
 
 I font mantengono le rispettive licenze OFL nella cartella assets.
 
+
+## Modulo richieste
+
+Web3Forms predisposto in Contatti e Appuntamenti, attualmente disattivato. La Access Key è vuota in assets/web3forms-config.js. Nessun invio è possibile prima della configurazione. Per attivarlo occorre verificare il servizio e aggiornare le informative che riportano lo stato disattivato, poi effettuare una prova di ricezione.
