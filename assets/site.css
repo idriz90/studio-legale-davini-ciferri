@@ -181,3 +181,34 @@ body.home{position:relative}.home .front-cover{min-height:100svh;padding-bottom:
 
 /* Informative più piccole e distribuite sulla larghezza della pagina */
 .home .home-minimal-footer{padding-inline:0}.home .home-minimal-footer nav{width:min(1160px,calc(100% - 80px));margin-inline:auto;justify-content:space-between;font-size:11px;gap:8px 16px}.home .home-minimal-footer a{padding-block:8px}@media(max-width:600px){.home .home-minimal-footer nav{width:calc(100% - 48px);font-size:10px;gap:6px 10px}}
+
+
+
+/* Home: lieve virata a destra, senza zoom progressivo */
+.home .front-cover{overflow:hidden}.home .front-cover picture img{transform-origin:50% 50%;animation:home-helicopter-turn 9s cubic-bezier(.35,0,.65,1) infinite alternate;will-change:transform}@keyframes home-helicopter-turn{from{transform:scale(1.13) rotate(-2deg)}to{transform:scale(1.13) rotate(3deg)}}@media(max-width:600px){.home .front-cover picture img{animation-name:home-helicopter-turn-mobile}@keyframes home-helicopter-turn-mobile{from{transform:scale(1.19) rotate(-2deg)}to{transform:scale(1.19) rotate(3deg)}}}@media(prefers-reduced-motion:reduce){.home .front-cover picture img{animation:none;transform:none;will-change:auto}}
+
+/* Variante leggibilità 2 approvata: Source Serif e velo antracite */
+.home .cover-location{font-weight:700;letter-spacing:.035em}.home .cover-description{font-weight:700;max-width:950px;line-height:1.35}.home .cover-actions a{font-weight:700}.home .cover-copy h1{line-height:1.08}.home .home-minimal-footer nav{font-weight:600}@media(max-width:550px){.home .cover-description{font-size:21px}.home .cover-copy h1{font-size:clamp(40px,10vw,58px)}}.home .cover-copy h1{font-family:'Studio Serif',Georgia,serif;font-weight:700;letter-spacing:-.035em;font-size:clamp(44px,6.2vw,82px);text-shadow:0 2px 8px #0005}.home .cover-shade{background:rgba(14,24,32,.57)}.home .cover-description{font-family:Studio,Arial,sans-serif;text-shadow:0 1px 5px #0006}
+
+/* Home essenziale: unico titolo con dimensioni della precedente etichetta */
+.home .cover-copy h1.cover-studio-label{font-family:Studio,Arial,sans-serif;font-size:16px;font-weight:700;line-height:1.4;letter-spacing:.035em;margin-bottom:34px;text-shadow:0 1px 4px rgba(8,26,39,.45)}
+
+/* Informative raggruppate al centro */
+.home .home-minimal-footer nav{width:auto;max-width:calc(100% - 40px);justify-content:center;gap:8px 22px}@media(max-width:550px){.home .home-minimal-footer nav{gap:6px 15px}}
+
+/* Home: variante editoriale approvata, tre collegamenti */
+.home .cover-actions{display:flex;flex-direction:column;align-items:stretch;gap:0;width:min(430px,100%)}
+.home .cover-actions .action.light,.home .cover-actions .cover-link{display:flex;justify-content:space-between;align-items:center;background:transparent;color:#fff;border:0;border-bottom:1px solid #ffffff80;padding:20px 0;min-height:54px;font-size:clamp(23px,3vw,32px);font-weight:600;text-shadow:none;transition:background .2s,color .2s}
+.home .cover-actions .action.light:after{content:'↗';margin-left:24px}
+.home .cover-actions .action.light:hover,.home .cover-actions .cover-link:hover{background:#17394966;color:white;border-color:white;padding-inline:14px}
+.home .cover-actions a:focus-visible{outline:2px solid white;outline-offset:5px}
+@media(max-width:550px){.home .cover-actions{max-width:360px}}
+
+/* Introduzione essenziale: titolo visibile e gerarchia chiara */
+.home .cover-copy h1.home-seo-heading{font-family:Studio,Arial,sans-serif;font-size:clamp(20px,2.2vw,27px);font-weight:600;line-height:1.4;letter-spacing:0;max-width:560px;margin:0 0 24px;text-shadow:0 1px 5px #0008}
+
+/* Frase introduttiva compatta subito sotto la testata */
+.home .home-intro{position:absolute;top:76px;left:0;right:0;margin-inline:auto}.home .home-intro h1.home-seo-heading{font-family:Studio,Arial,sans-serif;font-size:13px;font-weight:500;line-height:1.5;letter-spacing:.01em;max-width:none;margin:0;color:#fff;text-shadow:0 1px 5px #0009}@media(max-width:900px){.home .home-intro{top:70px}}@media(max-width:550px){.home .home-intro h1.home-seo-heading{font-size:12px;max-width:340px}}
+
+/* Attività raggiungibili scorrendo la home */
+html{scroll-behavior:smooth}.home .activities-scroll{position:absolute;bottom:30px;left:calc(50% - 24px);width:48px;height:48px;display:flex;align-items:center;justify-content:center;color:white;border:1px solid #ffffff70;text-decoration:none}.home .activities-scroll:hover{background:#ffffff24}.home #attivita-home{padding:48px 0 60px;scroll-margin-top:20px}.home .scroll-activities{width:min(1160px,calc(100% - 48px));margin:auto}.home .scroll-activities h2{font-size:28px;margin:0 0 28px}.home .home-minimal-footer{position:relative;background:#203f52}.home .front-cover{padding-bottom:120px}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
