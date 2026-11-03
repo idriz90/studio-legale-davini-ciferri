@@ -1,6 +1,6 @@
 # Studio Legale Associato Davini Ciferri
 
-Bozza statica del sito, aggiornata al 2 novembre 2026.
+Bozza statica del sito, aggiornata al 3 novembre 2026.
 
 Questa copia contiene HTML, CSS, JavaScript, fotografie e font della versione studio-originale. Non include le precedenti proposte grafiche o documenti riservati.
 
@@ -19,4 +19,4 @@ I font mantengono le rispettive licenze OFL nella cartella assets.
 
 ## Modulo richieste
 
-Web3Forms predisposto in Contatti e Appuntamenti, attualmente disattivato. La Access Key è vuota in assets/web3forms-config.js. Nessun invio è possibile prima della configurazione. Per attivarlo occorre verificare il servizio e aggiornare le informative che riportano lo stato disattivato, poi effettuare una prova di ricezione.
+Web3Forms configurato in Contatti e Appuntamenti con Access Key pubblica. La presa visione dell’informativa è obbligatoria e non preselezionata. Invio con validazione, protezione antispam di base e gestione degli errori. Ricezione effettiva da verificare con una prova autorizzata.

@@ -8,6 +8,7 @@ document.querySelectorAll('[data-meeting]').forEach(link=>link.addEventListener(
 form.addEventListener('submit',async event=>{
 event.preventDefault();if(!ready||busy||!form.reportValidity())return;if(form.elements.botcheck.checked){status.textContent='Invio non disponibile. Contatta lo studio via email o telefono.';return;}
 const payload={access_key:key,subject:'Richiesta dal sito — Studio Davini Ciferri',from_name:'Sito Studio Davini Ciferri',botcheck:false};
+payload.privacy_ack='Presa visione dell’informativa privacy';
 for(const name of ['name','email','phone','modalita','message'])payload[name]=form.elements[name].value.trim();
 if(!payload.name||!payload.message){status.textContent='Inserisci il nome e una breve descrizione.';return;}
 busy=true;fields.disabled=true;button.textContent='Invio in corso…';status.textContent='Invio della richiesta in corso.';
