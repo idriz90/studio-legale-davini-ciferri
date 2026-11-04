@@ -23,7 +23,12 @@ Aggiornato: 4 novembre 2026
 
 ## Blocco prima del cambio DNS
 
-- Salvare da Google Search Console il rendimento degli ultimi 16 mesi, le pagine indicizzate, le sitemap e la proprietà verificata. L'accesso al browser non è stato autorizzato durante questo controllo, quindi questa fotografia non è ancora stata eseguita.
+- Fotografia rendimento Search Console acquisita il 4 novembre 2026. Periodo esportato: 3 agosto–2 novembre 2026 (ultimi 3 mesi).
+- Totale: 30 clic, 912 impressioni. Dispositivi: mobile 19 clic/657 impressioni; computer 11/251; tablet 0/4.
+- Paese principale: Italia, 30 clic e 880 impressioni.
+- Pagine da preservare: home (28 clic, 894 impressioni), `/copia-di-chi-siamo` (3/109), `/services-2` (2/52), `/contatti` (0/38), `/book-online` (0/20) e le pagine servizio già presenti nell'attuale sitemap Wix.
+- Query con clic: “avvocato del lavoro vicino a me” (2 clic, 4 impressioni, posizione media 3,25). Tra le query con più impressioni: “studio legale cini pisa”, “avvocato civilista pisa”, “avvocato del lavoro pisa” e ricerche del nome Davini.
+- Restano da salvare, se disponibili, il rapporto Indicizzazione/Pagine, le sitemap registrate e il metodo di verifica della proprietà.
 
 ## Regola di pubblicazione
 
