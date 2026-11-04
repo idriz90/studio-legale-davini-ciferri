@@ -236,3 +236,25 @@ body .rf.rf-completo .rf-logos,body .rf.rf-completo .rf-legal{border-color:#ffff
 .request-section label.privacy-ack{display:flex;align-items:flex-start;gap:10px;margin:20px 0;font-size:15px}.request-section .privacy-ack input[type=checkbox]{width:18px;height:18px;flex:0 0 18px;margin-top:4px;accent-color:#203f52}
 
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+/* Marchio dell'intestazione più leggibile. */
+.site-header .header-inner{min-height:75px}
+.site-header .wordmark img{width:45px;height:45px}
+.site-header .wordmark span{font-size:27.5px}
+.site-header .wordmark small{font-size:13.75px}
+
+/* Contatti rapidi disponibili soltanto su schermi mobili. */
+.mobile-contact-bar{display:none}
+@media(max-width:700px){
+ body{padding-bottom:70px}
+ .site-header .header-inner{min-height:70px}
+ .site-header .wordmark img{width:45px;height:45px}
+ .site-header .wordmark span{font-size:25px}
+ .site-header .wordmark small{font-size:12.5px}
+ .mobile-contact-bar{position:fixed;z-index:100;left:0;right:0;bottom:0;display:grid;grid-template-columns:repeat(3,1fr);min-height:70px;background:#203f52;color:#fff;border-top:1px solid #ffffff40;box-shadow:0 -4px 16px #102c3a30;padding-bottom:env(safe-area-inset-bottom)}
+ .mobile-contact-bar a{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:0;min-height:70px;color:#fff;text-decoration:none;font-size:12px;line-height:1.2;border-right:1px solid #ffffff24}
+ .mobile-contact-bar a:last-child{border-right:0}
+ .mobile-contact-bar a span{font-size:24px;line-height:1}
+ .mobile-contact-bar a:active{background:#14637b}
+ .mobile-contact-bar a:focus-visible{outline:3px solid #fff;outline-offset:-5px}
+}
