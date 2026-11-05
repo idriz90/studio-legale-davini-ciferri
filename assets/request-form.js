@@ -15,9 +15,14 @@ document.querySelectorAll('[data-meeting]').forEach(link=>link.addEventListener(
 form.addEventListener('submit',async event=>{
 event.preventDefault();if(!ready||busy||!form.reportValidity())return;if(form.elements.botcheck.checked){status.textContent='Invio non disponibile. Contatta lo studio via email o telefono.';return;}
 const payload={access_key:key,subject:'Richiesta dal sito — Studio Davini Ciferri',from_name:'Sito Studio Davini Ciferri',botcheck:false};
-payload.privacy_ack='Presa visione dell’informativa privacy';
-for(const name of ['name','email','phone','modalita','area','message'])payload[name]=form.elements[name].value.trim();
-if(!payload.name||!payload.message){setStatus('Inserisci il nome e una breve descrizione.','error');return;}
+payload['Informativa privacy']='Presa visione dell’informativa privacy';
+payload['Nome e cognome']=form.elements.name.value.trim();
+payload.email=form.elements.email.value.trim();
+payload.Telefono=form.elements.phone.value.trim();
+payload['Modalità preferita']=form.elements.modalita.value.trim();
+payload['Di cosa parliamo']=form.elements.area.value.trim();
+payload['Descrizione e disponibilità']=form.elements.message.value.trim();
+if(!payload['Nome e cognome']||!payload['Descrizione e disponibilità']){setStatus('Inserisci il nome e una breve descrizione.','error');return;}
 busy=true;fields.disabled=true;button.textContent='Invio in corso…';setStatus('Invio della richiesta in corso.');
 const controller=new AbortController(),timeout=setTimeout(()=>controller.abort(),20000);
 try{const response=await fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal});const data=await response.json();
