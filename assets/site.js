@@ -29,7 +29,7 @@ if(homeStudio){
  const scrollArrow=document.querySelector('.home .activities-scroll');
  if(coverActions){
   coverActions.className='home-hero-message';
-  coverActions.innerHTML=`<p>Esperienza e competenza al servizio<br>di persone e imprese</p><a href="./services-2/">Scopri le aree di attività</a>`;
+  coverActions.innerHTML=`<p>Esperienza e competenza al servizio <br>di persone e imprese</p><a href="./services-2/">Scopri le aree di attività</a>`;
  }
  if(scrollArrow)scrollArrow.remove();
  homeStudio.className='home-studio-profile';
