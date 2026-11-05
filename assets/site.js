@@ -11,6 +11,11 @@ if(toggle&&navigation){
  matchMedia('(min-width:901px)').addEventListener('change',close);
 }
 
+const existingFooter=document.querySelector('footer');
+if(existingFooter){
+ existingFooter.outerHTML=`<footer class="rf rf-completo" id="fondo"><div class="shell"><div class="rf-logos"><div class="credentials" aria-label="Immagini istituzionali dello studio"><a href="https://convenzioni.cralnetwork.it/uilpoliziapenitenziaria/prodotto/studio-legale-dc/" target="_blank" rel="noreferrer"><img src="/assets/original/a68d38_37d522332ebb46abbe23472059350c45~mv2.png.webp" alt="UILPA Polizia Penitenziaria" loading="lazy"></a><a href="https://convenzioni.cralnetwork.it/uilpolizia/prodotto/studio-legale-dc/" target="_blank" rel="noreferrer"><img src="/assets/original/a68d38_280bd92183304e35b5cbacca175349e1~mv2.png.webp" alt="UIL Polizia" loading="lazy"></a><a href="https://convenzioni.cralnetwork.it/uilpavigilidelfuoco/prodotto/studio-legale-dc/" target="_blank" rel="noreferrer"><img src="/assets/original/a68d38_78bb279f54d3438392c32e018dce7dae~mv2.png.webp" alt="UILPA Vigili del Fuoco" loading="lazy"></a><img src="/assets/original/a68d38_a1736d861bef4d5ba8cba25180ed331d~mv2.jpg.webp" alt="Certificato dello studio" loading="lazy"><img src="/assets/original/a68d38_6308ba26101e4663b2a5dca85154c3e7~mv2.png.webp" alt="Italian Industry and Commerce Office in the UAE" loading="lazy"></div><a class="rf-email" href="mailto:studiolegaledc@gmail.com">studiolegaledc@gmail.com</a></div><div class="rf-legal"><p class="rf-address">Via Novecchio 10, interno 11 · c/o Office Centre Galileo Galilei · Pisa · Zona Ospedaletto</p><nav aria-label="Informative"><a href="/privacy/">Privacy</a><a href="/cookie-policy/">Cookie</a><a href="/note-legali/">Note legali</a><span class="rf-copyright">© 2016–2026 <a href="https://www.linkedin.com/feed/" target="_blank" rel="noopener noreferrer" aria-label="by IS — LinkedIn, si apre in una nuova scheda">by IS</a></span></nav></div></div></footer>`;
+}
+
 const mobileContacts=document.createElement('nav');
 mobileContacts.className='mobile-contact-fabs';
 mobileContacts.setAttribute('aria-label','Contatti rapidi');
