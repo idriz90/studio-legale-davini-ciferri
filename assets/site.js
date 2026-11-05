@@ -25,8 +25,15 @@ if(existingFooter){
 
 const homeStudio=document.querySelector('.home #studio-home');
 if(homeStudio){
- homeStudio.className='home-professionals';
- homeStudio.innerHTML=`<div class="shell home-professionals-inner"><div class="home-professionals-copy"><h2>Lo studio</h2><p>Fabio Davini e Christian Ciferri affiancano privati e imprese nella consulenza e nell’assistenza legale. Lo studio ha sede a Pisa.</p></div><div class="home-professionals-portraits" aria-label="I professionisti"><figure><img src="./assets/original/a68d38_01db7b5f86104eeb9a2d0ae49dac2d91~mv2.jpg.webp" alt="Avvocato Fabio Davini" loading="lazy"><figcaption>Fabio Davini</figcaption></figure><figure><img src="./assets/original/a68d38_ff43593ece654540b96d99822a453a1d~mv2.jpg.webp" alt="Avvocato Christian Ciferri" loading="lazy"><figcaption>Christian Ciferri</figcaption></figure></div></div>`;
+ const coverActions=document.querySelector('.home .cover-actions');
+ const scrollArrow=document.querySelector('.home .activities-scroll');
+ if(coverActions){
+  coverActions.className='home-hero-message';
+  coverActions.innerHTML=`<p>Esperienza e competenza al servizio<br>di persone e imprese</p><a href="./services-2/">Scopri le aree di attività</a>`;
+ }
+ if(scrollArrow)scrollArrow.remove();
+ homeStudio.className='home-studio-profile';
+ homeStudio.innerHTML=`<div class="shell home-studio-profile-inner"><div class="home-studio-evidence"><p class="home-studio-kicker">Lo studio</p><h2>Più di 10 anni<br>di attività a Pisa</h2><div class="home-network"><div><h3>Collaborazioni</h3><div class="home-network-logos home-partners"><a href="https://www.difesaconsumatore.org/" target="_blank" rel="noopener noreferrer"><img src="./assets/collaborazioni/difesa-consumatore.png" alt="Difesa Consumatore"></a><a class="home-ristrutturo" href="https://www.ristrutturopisa.it/" target="_blank" rel="noopener noreferrer"><img src="./assets/collaborazioni/ristrutturo-pisa.svg" alt="Ristrutturo Pisa"></a></div></div><div><h3>Convenzioni</h3><div class="home-network-logos home-conventions"><img src="./assets/original/a68d38_37d522332ebb46abbe23472059350c45~mv2.png.webp" alt="UILPA Polizia Penitenziaria"><img src="./assets/original/a68d38_280bd92183304e35b5cbacca175349e1~mv2.png.webp" alt="UIL Polizia"><img src="./assets/original/a68d38_78bb279f54d3438392c32e018dce7dae~mv2.png.webp" alt="UILPA Vigili del Fuoco"><img src="./assets/original/a68d38_a1736d861bef4d5ba8cba25180ed331d~mv2.jpg.webp" alt="Gulf International Congress"><img src="./assets/original/a68d38_6308ba26101e4663b2a5dca85154c3e7~mv2.png.webp" alt="Italian Industry and Commerce Office in the UAE"></div></div></div></div><div class="home-studio-bio"><p>Lo Studio Legale Associato Davini Ciferri opera a Pisa e affianca privati e imprese nella consulenza e nell’assistenza giudiziale e stragiudiziale.</p><p>L’attività si fonda su un rapporto diretto con il cliente, sull’esame dei fatti e dei documenti e sulla definizione chiara delle possibili iniziative. Lo studio integra competenze in ambito civile, bancario e immobiliare e si avvale di collaborazioni professionali e convenzioni.</p><a href="./copia-di-chi-siamo/">Conosci lo studio <span aria-hidden="true">↗</span></a></div></div>`;
 }
 
 const studioApproach=document.querySelector('body.inside .studio-approach');
