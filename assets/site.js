@@ -23,7 +23,13 @@ if(existingFooter){
  renderedFooter.querySelector('.rf-legal').prepend(contactLine);
 }
 
-const studioApproach=document.querySelector('.studio-approach');
+const homeStudio=document.querySelector('.home #studio-home');
+if(homeStudio){
+ homeStudio.className='home-studio-compact';
+ homeStudio.innerHTML=`<div class="shell home-studio-compact-inner"><div><p class="home-studio-kicker">Studio legale associato · Pisa</p><h2>Consulenza e assistenza legale</h2></div><div><p>Fabio Davini e Christian Ciferri affiancano privati e imprese nelle rispettive aree di competenza.</p><nav aria-label="Approfondisci lo studio"><a href="./copia-di-chi-siamo/">Scopri lo studio <span aria-hidden="true">↗</span></a><a href="./services-2/">Aree di attività <span aria-hidden="true">↗</span></a></nav></div></div>`;
+}
+
+const studioApproach=document.querySelector('body.inside .studio-approach');
 if(studioApproach){
  studioApproach.insertAdjacentHTML('afterend',`<section class="studio-collaborations" aria-labelledby="collaborations-title"><div class="collaborations-heading"><p class="collaborations-kicker">Rete professionale</p><h2 id="collaborations-title">Collaborazioni</h2><p>Realtà con cui lo studio collabora sul territorio, mantenendo distinti ruoli e competenze.</p></div><div class="collaborations-grid"><a class="collaboration-card collaboration-consumer" href="https://www.difesaconsumatore.org/" target="_blank" rel="noopener noreferrer"><span class="collaboration-logo"><img src="../assets/collaborazioni/difesa-consumatore.png" alt="Logo Difesa Consumatore"></span><span class="collaboration-copy"><strong>Difesa Consumatore</strong><small>Tutela e assistenza ai consumatori</small><span>Visita il sito ↗</span></span></a><a class="collaboration-card collaboration-building" href="https://www.ristrutturopisa.it/" target="_blank" rel="noopener noreferrer"><span class="collaboration-logo"><img src="../assets/collaborazioni/ristrutturo-pisa.svg" alt="Logo Ristrutturo Pisa"></span><span class="collaboration-copy"><strong>Ristrutturo Pisa</strong><small>Servizi per la ristrutturazione</small><span>Visita il sito ↗</span></span></a></div></section>`);
  const collaborations=document.querySelector('.studio-collaborations');
