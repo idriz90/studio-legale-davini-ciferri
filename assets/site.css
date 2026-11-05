@@ -235,8 +235,9 @@ body .rf.rf-completo .rf-logos,body .rf.rf-completo .rf-legal{border-color:#ffff
 
 .request-section label.privacy-ack{display:flex;align-items:flex-start;gap:10px;margin:20px 0;font-size:15px}.request-section .privacy-ack input[type=checkbox]{width:18px;height:18px;flex:0 0 18px;margin-top:4px;accent-color:#203f52}
 
-#request-status.request-status-success{color:#16743b;font-weight:700}
 #request-status.request-status-error{color:#a12b2b;font-weight:600}
+
+.request-confirmation{min-height:calc(100vh - 190px);display:grid;place-items:center;padding-block:70px}.confirmation-card{width:min(100%,680px);padding:64px 55px;text-align:center;background:#f4f8fa;border:1px solid #c8d8df;box-shadow:0 24px 55px rgba(13,40,59,.12)}.confirmation-mark{display:grid;place-items:center;width:58px;height:58px;margin:0 auto 24px;border-radius:50%;background:#dcecf2;color:#14637b;font-size:32px;line-height:1}.confirmation-card h1{margin:0 0 20px;font-size:58px}.confirmation-card p{max-width:510px;margin:0 auto 30px;color:#4d6472}.confirmation-card .button{display:inline-block}@media(max-width:650px){.request-confirmation{padding-block:38px}.confirmation-card{padding:48px 24px}.confirmation-card h1{font-size:42px}}
 
 .visually-hidden{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 
