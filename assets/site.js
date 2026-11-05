@@ -26,7 +26,7 @@ if(existingFooter){
 const homeStudio=document.querySelector('.home #studio-home');
 if(homeStudio){
  homeStudio.className='home-professionals';
- homeStudio.innerHTML=`<div class="shell home-professionals-inner"><div class="home-professionals-copy"><h2>Lo studio</h2><p>Fabio Davini e Christian Ciferri affiancano privati e imprese nella consulenza e nell’assistenza legale. Lo studio ha sede a Pisa.</p><a href="./copia-di-chi-siamo/">Conosci lo studio <span aria-hidden="true">↗</span></a></div><div class="home-professionals-portraits" aria-label="I professionisti"><figure><img src="./assets/original/a68d38_01db7b5f86104eeb9a2d0ae49dac2d91~mv2.jpg.webp" alt="Avvocato Fabio Davini" loading="lazy"><figcaption>Fabio Davini</figcaption></figure><figure><img src="./assets/original/a68d38_ff43593ece654540b96d99822a453a1d~mv2.jpg.webp" alt="Avvocato Christian Ciferri" loading="lazy"><figcaption>Christian Ciferri</figcaption></figure></div></div>`;
+ homeStudio.innerHTML=`<div class="shell home-professionals-inner"><div class="home-professionals-copy"><h2>Lo studio</h2><p>Fabio Davini e Christian Ciferri affiancano privati e imprese nella consulenza e nell’assistenza legale. Lo studio ha sede a Pisa.</p></div><div class="home-professionals-portraits" aria-label="I professionisti"><figure><img src="./assets/original/a68d38_01db7b5f86104eeb9a2d0ae49dac2d91~mv2.jpg.webp" alt="Avvocato Fabio Davini" loading="lazy"><figcaption>Fabio Davini</figcaption></figure><figure><img src="./assets/original/a68d38_ff43593ece654540b96d99822a453a1d~mv2.jpg.webp" alt="Avvocato Christian Ciferri" loading="lazy"><figcaption>Christian Ciferri</figcaption></figure></div></div>`;
 }
 
 const studioApproach=document.querySelector('body.inside .studio-approach');
